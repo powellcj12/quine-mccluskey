@@ -8,10 +8,9 @@ This is a software tool which generates the minimized 2-level SOP (sum of produc
 ## Usage
 
 No makefile yet, so for now you need to compile and run manually:
-'''
-g++ QM.cpp -o QM
-./QM
-'''
+
+	g++ QM.cpp -o QM
+	./QM
 
 ## Execution
 
@@ -19,11 +18,10 @@ First, you must specify how you will enter Boolean functions. They may be entere
 
 Each line of input corresponds to 1 Boolean function. Each Boolean function must have at least one minterm and zero or more "don't cares". Below are some input examples:
 
-'''
-m(1,2,3,9,10)+(d5,7)
-m(0,2,3,5,6,7,8,10,11,14,15)
-m(1,5,3)+d(2,4)
-'''
+
+	m(1,2,3,9,10)+(d5,7)
+	m(0,2,3,5,6,7,8,10,11,14,15)
+	m(1,5,3)+d(2,4)
 
 Note that minterms do not need to be specified in sorted order.
 
