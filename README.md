@@ -7,9 +7,7 @@ This is a software tool which generates the minimized 2-level SOP (sum of produc
 
 ## Usage
 
-No makefile yet, so for now you need to compile and run manually:
-
-	g++ QM.cpp -o QM
+	make
 	./QM
 
 ## Execution
