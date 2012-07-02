@@ -732,12 +732,11 @@ void convertSOPCube(cube* c, int l)
 //Output a cube in POS format for l literals
 void convertPOSCube(cube* c, int l)
 {
-	char chars[] = {'A','B','C','D','E','F','G','H','I','J'};
 	vector<char> terms;
 	
 	//Determine which literals to use
 	for(int i = l - 1; i >= 0; i--)
-		terms.push_back(chars[i]);
+		terms.push_back('A' + i);
 	
 	int count = 0;
 	for(int i = l - 1; i >= 0; i--)
